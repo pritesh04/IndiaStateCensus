@@ -57,10 +57,10 @@ public static int i = 0;
 			});
 			reader.close();
 		}catch(FileNotFoundException e) {
-			throw new Exception(e.getMessage(),Exception.ExceptionType.File_Not_Found);
+			throw new Exception(e.getMessage(),Exception.ExceptionType.File_Not_Found  );
 		}
 		catch(IllegalStateException  e) {
-			throw new Exception(e.getMessage(),Exception.ExceptionType.Parse_Error);
+			throw new Exception(e.getMessage(),Exception.ExceptionType.Parse_Error  );
 		}
 		return stateCodeList.size();
 	}

@@ -49,7 +49,7 @@ public class IndianStateCensusTest {
 	}
 	
 	@Test
-	public void shouldReturCustomException_ifCSVHeaderIncorrect() throws Exception {
+	public void shouldReturCustomException_ifCsvHeaderIncorrect() throws Exception {
 		try {
 			analyser = new IndianCensusAnalyser();
 			org.junit.Assert.assertEquals(29, analyser.loadCensusData(path));
